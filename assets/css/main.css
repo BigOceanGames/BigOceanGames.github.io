@@ -5,7 +5,18 @@
 	Photon by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	Big Ocean color scheme to follow
+
 */
+
+	/* Color Theme Swatches in Hex */
+	.color-theme_DALLE_2023-10-24_08-1-hex { color: #000A0D; }
+	.color-theme_DALLE_2023-10-24_08-2-hex { color: #012326; }
+	.color-theme_DALLE_2023-10-24_08-3-hex { color: #808C74; }
+	.color-theme_DALLE_2023-10-24_08-4-hex { color: #F2F2E9; }
+	.color-theme_DALLE_2023-10-24_08-5-hex { color: #D9D0B4; }
+	
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -99,7 +110,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #666;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: 'Ruda', "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.65em;
@@ -121,8 +132,8 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #555;
-		font-weight: 400;
+		/* color: #555; */
+		font-weight: 700;
 	}
 
 	em, i {
@@ -133,15 +144,30 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
+		p.mono {
+			font-family: 'Courier New', monospace;
+			color: #6ba8d4;
+		}
+
+		p.tagline {
+			filter: drop-shadow(0.1rem 0.1rem 0 rgb(0, 36, 23));
+		}
+
 	h1, h2, h3, h4, h5, h6 {
-		color: #555;
+		color: #ababab;
 		line-height: 1em;
 		margin: 0 0 1em 0;
+		font-family: 'Bebas Neue', sans-serif;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
+		}
+
+		h1.gametitle {
+			color:#bbc9c4;
+			margin: 0em;
 		}
 
 	h1 {
@@ -2388,6 +2414,8 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
+
+			filter: drop-shadow(0.5rem 0.5rem 1rem rgb(0, 11, 15));
 		}
 
 			.image.fit img {
@@ -2819,7 +2847,19 @@ input, select, textarea {
 	}
 
 		.main.style1 {
-			background: #fff;
+			/* background: #aba radial-gradient(ellipse at top, #141414, #3e3e3e) */
+			background-attachment: fixed,							fixed;
+			background-image: url("images/overlay1.png"), url("../../images/header2.jpg");
+			background-size: auto, cover;
+			background-position: top left,						center center;
+		}
+
+		#one.main.style1 h1, h2, #one.main.style1 p {
+			filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+		}
+
+		#one.main {
+			border-top: 2px solid #0b1816;
 		}
 
 		.main.style2 {
@@ -2828,6 +2868,7 @@ input, select, textarea {
 			background-attachment: fixed,							fixed;
 			background-image: url("images/overlay1.png"), url("../../images/header.jpg");
 			background-size: auto,							cover;
+			background-position: top left,						center center;
 		}
 
 			.main.style2 a {
@@ -2848,6 +2889,13 @@ input, select, textarea {
 
 			.main.style2 header.major:after {
 				background: #ffffff;
+			}
+
+			.main.style1 img.iku-turso {
+				float:left;
+				width:130px;
+				margin-right: 1em;
+				filter: drop-shadow(0.5rem 0.5rem 1rem rgb(0, 11, 15));
 			}
 
 			.main.style2 input[type="submit"],
@@ -2913,11 +2961,11 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 9em 0 9em 0 ;
+		padding: 6em 0 5em 0 ;
 		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(#00201c 1%, #00161a 45%, #1e2c5b 75%, #374d93);
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
 		overflow: hidden;
@@ -3109,13 +3157,14 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 6em 0 6em 0 ;
+		padding: 4em 0 4em 0 ;
 		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
+		background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(#000 75%, #00161a 80%, #1e2c5b);
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
+		border-top:2px solid #D9D0B4;
 		text-align: center;
 	}
 
