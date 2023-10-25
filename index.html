@@ -8,6 +8,7 @@
 	
 	## 24 Oct 2023 mcarlssen (Mike Thorn)
 	Updated base template with core info.
+    Added Google Analytics tracker
 
 	TODO: add country flags to logo pane (Finland, USA, UK, other?)
 -->
@@ -23,6 +24,17 @@
 		<link href="https://fonts.googleapis.com/css2?family=Ruda&display=swap" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HH0R5P9GMX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HH0R5P9GMX');
+</script>
+
 	<body class="is-preload">
 
 		<!-- Header -->
