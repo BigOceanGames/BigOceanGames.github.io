@@ -3154,6 +3154,14 @@ input, select, textarea {
 		opacity: 1;
 	}
 
+    .flag {
+        width: 1.5%;
+        height: 1.5%;
+        margin:5px 5px 0 0;
+        filter: contrast(50%);
+    }
+
+
 /* Footer */
 
 	#footer {
@@ -3338,6 +3346,10 @@ input, select, textarea {
 					display: inline;
 				}
 
+            #header #logo {
+                max-width:100%;
+            }
+
 		/* Footer */
 
 			#footer {
@@ -3374,6 +3386,10 @@ input, select, textarea {
 			#header {
 				padding: 8em 3em 8em 3em ;
 			}
+            
+            #header #logo {
+                max-width:90%;
+            }
 
 		/* Footer */
 
